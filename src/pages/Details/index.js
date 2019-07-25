@@ -14,7 +14,7 @@ class Classify extends Component{
     render() {
         return (
           <div>
-            <h3>分类</h3>
+            <h3>商品详情</h3>
             <Button type="primary">主要按钮</Button>
             
           </div>
