@@ -2,14 +2,18 @@ import React, { Component } from "react";
 
 import { Switch, Route, Redirect, withRouter } from "react-router-dom";
 
-import { Badge } from "antd";
-
 import { Menu, Icon } from "antd";
 
 import Home from "./pages/Home";
 import Classify from "./pages/Classify";
 import Cart from "./pages/Cart";
 import Mine from "./pages/Mine";
+import Details from "./pages/Details";
+
+// import Home from "./pages/Home";
+// import Classify from "./pages/Classify";
+// import Cart from "./pages/Cart";
+// import Mine from "./pages/Mine";
 import "./App.css";
 let AllRouter = {
   Home,
@@ -80,9 +84,23 @@ class App extends Component {
               component={AllRouter[item.name]}
             />
           ))}
-          {/* <Route path="/goods/:id" component={Goods}/> */}
+          <Route path="/details/:id" component={Details} />
           <Redirect from="/" to="/home" exact />
         </Switch>
+        {/* <ul onClick={this.handleClick} selectedkeys={[this.state.current]} mode="horizontal" className="footer" style={{paddingLeft:0,marginBottom: 0}}>
+          { 
+            navs.map(item=>(
+              <li className="footer-index" key={item.name}>
+                <dl>
+                  <dt>
+                    <Icon type={item.icon} className="icon" />
+                  </dt>
+                  <dd>{item.title}</dd>
+                </dl>
+              </li>
+            ))
+          } 
+        </ul> */}
         <Menu
           onClick={this.handleClick}
           selectedKeys={[this.state.current]}

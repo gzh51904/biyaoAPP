@@ -3,11 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "axios": "^0.19.0",
     "antd": "^3.20.5",
+    "axios": "^0.19.0",
+    "element-react": "^1.4.34",
+    "element-theme-default": "^1.4.13",
     "node-sass": "^4.12.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-hot-loader": "^4.12.9",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1"
   },
@@ -33,7 +36,6 @@
     ]
   },
   "devDependencies": {
-    
     "babel-plugin-import": "^1.12.0",
     "react-redux": "^7.1.0",
     "redux": "^4.0.4"
