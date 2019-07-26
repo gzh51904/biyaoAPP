@@ -20,14 +20,14 @@ class Nurse extends Component {
         </div>
         <ul>
           <li>
-            <a href>
-              {/* <img src="../../assets/img/hu1.jpg" /> */}
+            <a href="true">
+              <img src={require("../../assets/img/hu1.jpg")} />
               <div>电动牙刷</div>
             </a>
           </li>
           <li>
-            <a href>
-              {/* <img src="../../assets/img/hu1.jpg" /> */}
+            <a href="true">
+              <img src={require("../../assets/img/hu2.jpg")} />
               <div>漱口水</div>
             </a>
           </li>
@@ -42,32 +42,32 @@ class Nurse extends Component {
         </div>
         <ul>
           <li>
-            <a href>
-              {/* <img src="../../assets/img/hu1.jpg" /> */}
+            <a href="true">
+              <img src={require("../../assets/img/hu3.jpg")} />
               <div>脱毛</div>
             </a>
           </li>
           <li>
-            <a href>
-              {/* <img src="../../assets/img/hu1.jpg" /> */}
+            <a href="true">
+              <img src={require("../../assets/img/hu4.jpg")} />
               <div>洗发</div>
             </a>
           </li>
           <li>
-            <a href>
-              {/* <img src="../../assets/img/hu1.jpg" /> */}
+            <a href="true">
+              <img src={require("../../assets/img/hu5.jpg")} />
               <div>手足</div>
             </a>
           </li>
           <li>
-            <a href>
-              {/* <img src="../../assets/img/hu1.jpg" /> */}
+            <a href="true">
+              <img src={require("../../assets/img/hu6.jpg")} />
               <div>沐浴</div>
             </a>
           </li>
           <li>
-            <a href>
-              {/* <img src="../../assets/img/hu1.jpg" /> */}
+            <a href="true">
+              <img src={require("../../assets/img/hu7.jpg")} />
               <div>精油</div>
             </a>
           </li>
@@ -82,14 +82,14 @@ class Nurse extends Component {
         </div>
         <ul>
           <li>
-            <a href>
-              {/* <img src="../../assets/img/hu1.jpg" /> */}
+            <a href="true">
+              <img src={require("../../assets/img/hu8.jpg")} />
               <div>男士护肤</div>
             </a>
           </li>
           <li>
-            <a href>
-              {/* <img src="../../assets/img/hu1.jpg" /> */}
+            <a href="true">
+              <img src={require("../../assets/img/hu9.jpg")} />
               <div>剃须刀</div>
             </a>
           </li>

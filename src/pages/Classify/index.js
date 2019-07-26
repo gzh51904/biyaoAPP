@@ -19,7 +19,10 @@ const tab1 = [
   "家纺",
   "眼镜",
   "电器",
-  "数码"
+  "数码",
+  "餐厨",
+  "运动",
+  "母婴"
 ];
 const { TabPane } = Tabs;
 
@@ -43,6 +46,8 @@ class Classify extends Component {
             defaultActiveKey="0"
             tabPosition={mode}
             style={{}}
+            // checkchildren={{ color: "#7F4395" }}
+            // onTabClick
             className="tab"
           >
             {/* {[...Array(12).keys()].map(i => (
@@ -78,6 +83,12 @@ class Classify extends Component {
               <Bags />
             </TabPane>
             <TabPane tab={tab1[9]} key={9}>
+              <Bags />
+            </TabPane>
+            <TabPane tab={tab1[10]} key={10}>
+              <Bags />
+            </TabPane>
+            <TabPane tab={tab1[11]} key={11}>
               <Bags />
             </TabPane>
           </Tabs>
