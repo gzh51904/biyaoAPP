@@ -1,71 +1,103 @@
-import React,{Component} from 'react';
+import React, { Component } from "react";
 
-import { Button } from 'element-react';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import 'element-theme-default';
+// import { NavLink, Route, Switch, Redirect } from "react-router-dom";
 
-import './classify.scss'
-import Slider from "react-slick";
-// import { NONAME } from 'dns';
+import "./classify.scss";
+import { Tabs, Radio } from "antd";
+import Nurse from "../../components/Classify/Nurse.js";
+import MenClothing from "../../components/Classify/MenClothing.js";
+import WomenClothing from "../../components/Classify/WomenClothing.js";
+import Bags from "../../components/Classify/Bags.js";
+// let content = [Nurse, MenClothing, WomenClothing, Bags];
+const tab1 = [
+  "个护",
+  "男装",
+  "女装",
+  "箱包",
+  "内衣",
+  "鞋靴",
+  "家纺",
+  "眼镜",
+  "电器",
+  "数码",
+  "餐厨",
+  "运动",
+  "母婴"
+];
+const { TabPane } = Tabs;
 
-// export default class SimpleSlider extends Component {
-//   class Classify extends Component{
+class Classify extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      mode: "left"
+    };
+  }
 
-//   render() {
-//     const settings = {
-//       // dots: true,
-//       infinite: false,
-//       speed: 500,
-//       slidesToShow: 1,
-//       slidesToScroll: 1,
-//       arrows:false,
-//       accessibility:true,
-//     };
-//     return (
-//       <div className="slider">
-//         <Slider {...settings}>
-//           <div className="one">
-//             <a href="javascript:void(0);">
-//               <img src="https://bfs.biyao.com/group1/M00/F6/98/rBACVF0IN5aALph_AACJL5soNkY303.jpg"/></a>
-//           </div>
-//           <div className="two">
-//             <a href="javascript:void(0);">
-//               <img src="https://bfs.biyao.com/group1/M00/F8/53/rBACW10IN5mAXOgPAABuAIUgEqM809.jpg"/></a>           
-//           </div>
-//           <div className="three">
-//             <a href="javascript:void(0);">
-//               <img src="https://bfs.biyao.com/group1/M00/F6/98/rBACVF0IN6CACME9AACq1XX7Db8275.jpg"/></a>
-//           </div>
-//           <div className="four">
-//             <a href="javascript:void(0);">
-//               <img src="https://bfs.biyao.com/group1/M00/F8/52/rBACYV0IN6OAM3isAABaG9_HI4M934.jpg"/></a>
-//           </div>
-//           <div className="five">
-//             <a href="javascript:void(0);">
-//               <img src="https://bfs.biyao.com/group1/M00/F6/B6/rBACVF0ITYqAT2OPAAFuEqPogaw225.jpg"/></a>
-//           </div>
-//         </Slider>
-//       </div>
-//     );
-//   }
-// }
-class Classify extends Component{
-    constructor(){
-        super();
-        this.staet= {
-
-        }
-    }
-    render() {
-        return (
-          <div>
-            <h3>分类</h3>
-            <Button type="primary">主要按钮</Button>
-            
-          </div>
-        )
-      }
+  render() {
+    const { mode } = this.state;
+    return (
+      <div className="search">
+        <div className="header">
+          <input type="text" placeholder="请输入你想要的商品" />
+        </div>
+        <div className="container">
+          <Tabs
+            defaultActiveKey="0"
+            tabPosition={mode}
+            style={{}}
+            // checkchildren={{ color: "#7F4395" }}
+            // onTabClick
+            className="tab"
+          >
+            {/* {[...Array(12).keys()].map(i => (
+              <TabPane tab={tab1[0]} key={0}>
+                {<Nurse />}
+              </TabPane>
+            ))} */}
+            <TabPane tab={tab1[0]} key={0}>
+              <Nurse />
+            </TabPane>
+            <TabPane tab={tab1[1]} key={1}>
+              <MenClothing />
+            </TabPane>
+            <TabPane tab={tab1[2]} key={2}>
+              <WomenClothing />
+            </TabPane>
+            <TabPane tab={tab1[3]} key={3}>
+              <Bags />
+            </TabPane>
+            <TabPane tab={tab1[4]} key={4}>
+              <Bags />
+            </TabPane>
+            <TabPane tab={tab1[5]} key={5}>
+              <Bags />
+            </TabPane>
+            <TabPane tab={tab1[6]} key={6}>
+              <Bags />
+            </TabPane>
+            <TabPane tab={tab1[7]} key={7}>
+              <Bags />
+            </TabPane>
+            <TabPane tab={tab1[8]} key={8}>
+              <Bags />
+            </TabPane>
+            <TabPane tab={tab1[9]} key={9}>
+              <Bags />
+            </TabPane>
+            <TabPane tab={tab1[10]} key={10}>
+              <Bags />
+            </TabPane>
+            <TabPane tab={tab1[11]} key={11}>
+              <Bags />
+            </TabPane>
+          </Tabs>
+        </div>
+      </div>
+    );
+  }
 }
+
+// List = withStorage(List);
 
 export default Classify;
