@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import { NavLink, Route, Switch, Redirect } from "react-router-dom";
+// import { NavLink, Route, Switch, Redirect } from "react-router-dom";
 
 import "./classify.scss";
 import { Tabs, Radio } from "antd";

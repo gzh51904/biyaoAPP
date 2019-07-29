@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
-import { NavLink, Route, Switch, Redirect } from "react-router-dom";
-import { Menu, Icon } from "antd";
+// import { NavLink, Route, Switch, Redirect } from "react-router-dom";
+import { Icon } from "antd";
 import "./Nurse.scss";
 class WomenClothing extends Component {
   render() {
@@ -44,25 +44,25 @@ class WomenClothing extends Component {
         <ul>
           <li>
             <a href="true">
-              <img src={require("../../assets/img/hu3.jpg")} />
+              <img src={require("../../assets/img/hu3.jpg")} alt="" />
               <div>牛仔裤</div>
             </a>
           </li>
           <li>
             <a href="true">
-              <img src={require("../../assets/img/hu4.jpg")} />
+              <img src={require("../../assets/img/hu4.jpg")} alt="" />
               <div>休闲裤</div>
             </a>
           </li>
           <li>
             <a href="true">
-              <img src={require("../../assets/img/hu5.jpg")} />
+              <img src={require("../../assets/img/hu5.jpg")} alt="" />
               <div>半身裙</div>
             </a>
           </li>
           <li>
             <a href="true">
-              <img src={require("../../assets/img/hu6.jpg")} />
+              <img src={require("../../assets/img/hu6.jpg")} alt="" />
               <div>短裤</div>
             </a>
           </li>
@@ -78,19 +78,187 @@ class WomenClothing extends Component {
         <ul>
           <li>
             <a href="true">
-              <img src={require("../../assets/img/hu8.jpg")} />
+              <img src={require("../../assets/img/hu8.jpg")} alt="" />
               <div>外套马甲</div>
             </a>
           </li>
           <li>
             <a href="true">
-              <img src={require("../../assets/img/hu9.jpg")} />
+              <img src={require("../../assets/img/hu9.jpg")} alt="" />
               <div>风衣/大衣</div>
             </a>
           </li>
           <li>
             <a href="true">
-              <img src={require("../../assets/img/hu7.jpg")} />
+              <img src={require("../../assets/img/hu7.jpg")} alt="" />
+              <div>皮衣/皮草</div>
+            </a>
+          </li>
+        </ul>
+
+        <div className="listgood_c">
+          <div>女士内搭</div>
+          <div>
+            更多
+            <Icon type="right" className="right" />
+          </div>
+        </div>
+        <ul>
+          <li>
+            <a href="true">
+              <img src={require("../../assets/img/hu1.jpg")} alt="" />
+              <div>连衣裙</div>
+            </a>
+          </li>
+          <li>
+            <a href="true">
+              <img src={require("../../assets/img/hu2.jpg")} alt="" />
+              <div>针织衫</div>
+            </a>
+          </li>
+        </ul>
+
+        <div className="listgood_c">
+          <div>女士下裤</div>
+          <div>
+            更多
+            <Icon type="right" className="right" />
+          </div>
+        </div>
+        <ul>
+          <li>
+            <a href="true">
+              <img src={require("../../assets/img/hu3.jpg")} alt="" />
+              <div>牛仔裤</div>
+            </a>
+          </li>
+          <li>
+            <a href="true">
+              <img src={require("../../assets/img/hu4.jpg")} alt="" />
+              <div>休闲裤</div>
+            </a>
+          </li>
+          <li>
+            <a href="true">
+              <img src={require("../../assets/img/hu5.jpg")} alt="" />
+              <div>半身裙</div>
+            </a>
+          </li>
+          <li>
+            <a href="true">
+              <img src={require("../../assets/img/hu6.jpg")} alt="" />
+              <div>短裤</div>
+            </a>
+          </li>
+        </ul>
+
+        <div className="listgood_c">
+          <div>外衣/套装</div>
+          <div>
+            更多
+            <Icon type="right" className="right" />
+          </div>
+        </div>
+        <ul>
+          <li>
+            <a href="true">
+              <img src={require("../../assets/img/hu8.jpg")} alt="" />
+              <div>外套马甲</div>
+            </a>
+          </li>
+          <li>
+            <a href="true">
+              <img src={require("../../assets/img/hu9.jpg")} alt="" />
+              <div>风衣/大衣</div>
+            </a>
+          </li>
+          <li>
+            <a href="true">
+              <img src={require("../../assets/img/hu7.jpg")} alt="" />
+              <div>皮衣/皮草</div>
+            </a>
+          </li>
+        </ul>
+
+        <div className="listgood_c">
+          <div>女士内搭</div>
+          <div>
+            更多
+            <Icon type="right" className="right" />
+          </div>
+        </div>
+        <ul>
+          <li>
+            <a href="true">
+              <img src={require("../../assets/img/hu1.jpg")} alt="" />
+              <div>连衣裙</div>
+            </a>
+          </li>
+          <li>
+            <a href="true">
+              <img src={require("../../assets/img/hu2.jpg")} alt="" />
+              <div>针织衫</div>
+            </a>
+          </li>
+        </ul>
+
+        <div className="listgood_c">
+          <div>女士下裤</div>
+          <div>
+            更多
+            <Icon type="right" className="right" />
+          </div>
+        </div>
+        <ul>
+          <li>
+            <a href="true">
+              <img src={require("../../assets/img/hu3.jpg")} alt="" />
+              <div>牛仔裤</div>
+            </a>
+          </li>
+          <li>
+            <a href="true">
+              <img src={require("../../assets/img/hu4.jpg")} alt="" />
+              <div>休闲裤</div>
+            </a>
+          </li>
+          <li>
+            <a href="true">
+              <img src={require("../../assets/img/hu5.jpg")} alt="" />
+              <div>半身裙</div>
+            </a>
+          </li>
+          <li>
+            <a href="true">
+              <img src={require("../../assets/img/hu6.jpg")} alt="" />
+              <div>短裤</div>
+            </a>
+          </li>
+        </ul>
+
+        <div className="listgood_c">
+          <div>外衣/套装</div>
+          <div>
+            更多
+            <Icon type="right" className="right" />
+          </div>
+        </div>
+        <ul>
+          <li>
+            <a href="true">
+              <img src={require("../../assets/img/hu8.jpg")} alt="" />
+              <div>外套马甲</div>
+            </a>
+          </li>
+          <li>
+            <a href="true">
+              <img src={require("../../assets/img/hu9.jpg")} alt="" />
+              <div>风衣/大衣</div>
+            </a>
+          </li>
+          <li>
+            <a href="true">
+              <img src={require("../../assets/img/hu7.jpg")} alt="" />
               <div>皮衣/皮草</div>
             </a>
           </li>

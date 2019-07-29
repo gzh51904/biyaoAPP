@@ -1,14 +1,16 @@
 .APP {
   width: 100%;
-  position: relative;
+  height: 100%;
+  display: flex;
+  /* position: relative; */
   font-size: 0.186667rem;
 }
 .ant-menu-horizontal {
   width: 100%;
   height: 1.333333rem;
-  position: absolute;
-  left: 0;
-  bottom: 0;
+  /* position: absolute; */
+  /* left: 0; */
+  /* bottom: 0; */
   border-top: 1px solid #ccc !important;
   display: flex;
 }

@@ -1,5 +1,6 @@
 .search {
-  width: 100%;
+  // width: 100%;
+  flex: 1;
 }
 .header {
   text-align: center;
@@ -16,8 +17,12 @@
   }
 }
 .tab {
-  height: 17.266667rem;
+  height: 20.266667rem;
+  overflow-y: auto;
 }
 .ant-tabs-nav .ant-tabs-tab:active {
   color: #7f4395;
+}
+.container {
+  padding-bottom: 0 !important;
 }
