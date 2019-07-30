@@ -1,0 +1,28 @@
+.search {
+  // width: 100%;
+  flex: 1;
+}
+.header {
+  text-align: center;
+  background: #fff;
+  padding: 0.266667rem;
+  border-bottom: 1px solid #ccc !important;
+  input {
+    width: 98%;
+    height: 0.8rem;
+    background: #f2f2f2;
+    border-radius: 0.06rem;
+    padding-left: 0.533333rem;
+    font-size: 0.3rem;
+  }
+}
+.tab {
+  height: 20.266667rem;
+  overflow-y: auto;
+}
+.ant-tabs-nav .ant-tabs-tab:active {
+  color: #7f4395;
+}
+.container {
+  padding-bottom: 0 !important;
+}

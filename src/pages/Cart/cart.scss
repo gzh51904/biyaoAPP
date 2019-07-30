@@ -353,7 +353,7 @@ div, span, input {
 .set-bottom {
     position: fixed;
     left: 0;
-    bottom: .98rem;
+    bottom: 1.3335rem;
     height: .99rem;
     width: 100%;
     padding: 0 .2rem;
@@ -505,4 +505,8 @@ div, span, input {
     color: #fff;
     background-color: #844b99;
     border-color: #844b99;
+}
+i.anticon {
+    padding-left: 0!important;
+    font-size: 0.426667rem;
 }
