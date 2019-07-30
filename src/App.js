@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import axios from 'axios'
 import { Switch, Route, Redirect, withRouter } from "react-router-dom";
 
 import { Menu, Icon } from "antd";
@@ -9,12 +9,12 @@ import Classify from "./pages/Classify";
 import Cart from "./pages/Cart";
 import Mine from "./pages/Mine";
 import Details from "./pages/Details";
-
+import Login from "./pages/login";
 // import Home from "./pages/Home";
 // import Classify from "./pages/Classify";
 // import Cart from "./pages/Cart";
 // import Mine from "./pages/Mine";
-import "./App.css";
+import "./App.scss";
 let AllRouter = {
   Home,
   Classify,
@@ -62,10 +62,23 @@ class App extends Component {
     this.setState({
       current: data.key
     });
-
+    // console.log(data.key)
+    //验证token
+    if (data.key=="Mine") {
+      let token = localStorage.getItem('Authorization');
+      // axios.get('/verify').then(res=>console.log(res))
+      // 用户已登录
+      if (!token) {
+        console.log(this.props.history.location)
+        this.props.history.push(this.props.history.location.pathname+"/login");
+        return
+      }
+     
+    } 
     //路由跳转
     //点击获取路由路径
     // console.log(this.state.navs);
+    
     let currentRouter = this.state.navs.filter(
       item => item.name === data.key
     )[0];
@@ -75,6 +88,7 @@ class App extends Component {
   render() {
     let { navs } = this.state;
     return (
+      <div id="all">
       <div className="App">
         <Switch>
           {navs.map(item => (
@@ -87,6 +101,7 @@ class App extends Component {
           <Route path="/details/:id" component={Details} />
           <Redirect from="/" to="/home" exact />
         </Switch>
+        <Route path="/*/login" component={Login} />
         {/* <ul onClick={this.handleClick} selectedkeys={[this.state.current]} mode="horizontal" className="footer" style={{paddingLeft:0,marginBottom: 0}}>
           { 
             navs.map(item=>(
@@ -113,6 +128,7 @@ class App extends Component {
             </Menu.Item>
           ))}
         </Menu>
+      </div>
       </div>
     );
   }

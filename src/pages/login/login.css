@@ -1,0 +1,234 @@
+.popuplogin-content {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 199;
+}
+
+.popuplogin-content .popuplogin-half-trasprant {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  z-index: 197;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.popuplogin-content .popuplogin-verify-cellphone {
+  width: 6.1rem;
+  height: 6.52rem;
+  background: #fff;
+  border-radius: .02rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -3.26rem;
+  margin-left: -3.05rem;
+  z-index: 199;
+}
+
+.popuplogin-content .popuplogin-close {
+  width: .56rem;
+  height: .56rem;
+  background: url(https://static.biyao.com/mlogin/images/pages/login/close_white64@2x-83dc0e3883.png) center no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  right: 0;
+  top: -.88rem;
+}
+
+.popuplogin-content .popuplogin-verify-cellphone .popuplogin-cellphone-title {
+  font-family: PingFangSC-Medium;
+  width: 6.1rem;
+  height: .88rem;
+  line-height: .88rem;
+  text-align: center;
+  font-size: .32rem;
+  color: #4A4A4A;
+}
+
+.popuplogin-content .popuplogin-verify-cellphone .popuplogin-error-prompt {
+  height: .48rem;
+  line-height: .48rem;
+  background: #FFF2DC;
+  font-family: PingFangSC-Regular;
+  font-size: .22rem;
+  color: #F84242;
+  text-align: center;
+}
+
+.popuplogin-content .popuplogin-verify-cellphone .popuplogin-username {
+  margin-top: .24rem;
+}
+
+.popuplogin-content .popuplogin-verify-cellphone label {
+  display: block;
+  width: 5.3rem;
+  height: .88rem;
+  line-height: .88rem;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.popuplogin-content .popuplogin-verify-cellphone label input {
+  position: absolute;
+  top:0;
+  border-bottom: .015rem solid #F4F4F4;
+  font-size: .28rem;
+  color: #666;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.popuplogin-content .popuplogin-verify-cellphone label .clear-hidden {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: .88rem;
+  height: .88rem;
+  background: url(https://static.biyao.com/mlogin/images/pages/login/delete_gray44@2x-6c05b3e691.png) 0.4rem center no-repeat;
+  background-size: 50%;
+  z-index: 199;
+  cursor: pointer;
+}
+
+.popuplogin-content .popuplogin-verify-cellphone .popuplogin-message-code {
+  vertical-align: middle;
+  margin-top: .56rem;
+}
+
+.popuplogin-content .popuplogin-verify-cellphone label {
+  display: block;
+  width: 5.3rem;
+  height: .88rem;
+  line-height: .88rem;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.popuplogin-content .popuplogin-verify-cellphone .popuplogin-message-code input {
+  width: 3.44rem;
+}
+
+
+.popuplogin-content .popuplogin-verify-cellphone label .clear-hidden-code {
+  position: absolute;
+  top: 0;
+  right: 2rem;
+  width: .88rem;
+  height: .88rem;
+  background: url(https://static.biyao.com/mlogin/images/pages/login/delete_gray44@2x-6c05b3e691.png) 0.4rem center no-repeat;
+  background-size: 50%;
+  z-index: 199;
+  cursor: pointer;
+}
+
+.popuplogin-content .popuplogin-verify-cellphone label .message-icon {
+  position: absolute;
+  right: 0;
+  top: .12rem;
+  width: 1.62rem;
+  height: .64rem;
+  color: #FFF;
+  background: #7F4395;
+  font-size: .26rem;
+  line-height: .64rem;
+  border-radius: .015rem;
+  text-align: center;
+}
+
+.popuplogin-content .popuplogin-verify-cellphone .popuplogin-tips {
+  font-family: PingFangSC-Regular;
+  color: #BBB;
+  font-size: .22rem;
+  padding: .2rem 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.popuplogin-content .popuplogin-verify-cellphone .popuplogin-tips p {
+  line-height: .32rem;
+}
+
+.popuplogin-content .popuplogin-verify-cellphone .popuplogin-next-btn {
+  width: 5.3rem;
+  height: .88rem;
+  line-height: .88rem;
+  text-align: center;
+  background: #7F4395;
+  border-radius: .02rem;
+  font-size: .3rem;
+  color: #FFF;
+  position: absolute;
+  bottom: .64rem;
+  left: 50%;
+  margin-left: -2.65rem;
+  font-family: PingFangSC-Medium;
+}
+
+.popuplogin-content .popuplogin-verify-cellphone .popuplogin-message-code input {
+  width: 3.44rem;
+}
+
+
+input {
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-appearance: none;
+  border: 0;
+  display: inline-block;
+  outline: 0;
+}
+body, html, input {
+  height: 100%;
+  width: 100%;
+}
+input {
+  font-family: 'microsoft yahei',Verdana,Arial,Helvetica,sans-serif;
+  font-size: .24rem;
+  -webkit-appearance: none;
+}
+button, input, select, textarea {
+  font-size: 100%;
+}
+div, input, span {
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+blockquote, body, button, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, html, iframe, input, li, ol, p, pre, select, table, td, textarea, th, ul {
+  margin: 0;
+  padding: 0;
+}
+* {
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  -o-text-size-adjust: none;
+  text-size-adjust: none;
+  margin:0;
+  padding: 0;
+}
+
+input {
+  text-rendering: auto;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+
+  background-color: white;
+  vertical-align: middle;
+  cursor: text;
+  margin: 0em;
+}
+

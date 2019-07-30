@@ -130,6 +130,7 @@ class Details extends Component{
           
         return (
             <>
+            <div id='j'>
             <div className="editor-wrap" id="by_w">
                 {/* 【商品】【评价】【详情】【推荐】 together */}
                 <Affix offsetTop={this.state.top}>
@@ -911,6 +912,7 @@ class Details extends Component{
                 </p>
             </div>
             {/* <div class="dialog-house" style={this.state.tips==='in'?{opacity: 0, display: 'none'}:{opacity: 100, display: 'block'}}>加入购物车成功</div> */}
+            </div>
             </>
         )
       }
