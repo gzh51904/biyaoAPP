@@ -160,6 +160,45 @@ class Home extends Component{
                             </a>
                       </div>
                      </div>
+                     <div className="doubleRowList">
+                      <div className="module-list">
+                        <a className="recommendLinkJump">
+                          <img src="https://bfs.biyao.com/group1/M00/5D/D2/rBACYVuxjUuABuHaAAB0wcL8WiU579.jpg"/>
+                            <dl id="shop-show">
+                              <dt className="price">
+                                <span>￥</span><span>98</span>
+                              </dt>
+                              <dd className="labels">
+                                <span className="labels_1">精选</span>
+                                <span className="labels_2">一起拼</span>
+                              </dd>
+                              <dd className="escp module-subtitle">LA MER原料制造商直供</dd>
+                              <dd className="escp module-title">冻干多肽抗皱面膜 8片</dd>
+                              <dd className="last-line"><span className="comment">853条好评</span>
+                              </dd>
+                            </dl>
+                            </a>
+                      </div>
+                      <div className="module-list">
+                           <a className="recommendLinkJump" href="javascript:void(0);" data-href="/products/1301755051010000001.html?stp=%7B%22rpvid%22%3A%22a365ed06-1564391110906-2ddeddce20%22%2C%22spm%22%3A%221.500001.moses%3Apid_25.f%7C1%7C1%7C1%22%2C%22aid%22%3A%22%7B%5C%22rcd%5C%22%3A%5C%2200285604712746d0.1564391111495%5C%22%7D%22%7D&amp;jumpTog=1">
+                           <img src="https://bfs.biyao.com/group1/M00/2E/11/rBACVFqiIGyAM2znAABUq-P7T8Y111.jpg"/>
+                            <dl id="shop-show">
+                              <dt className="price">
+                                  <span>￥</span><span>59</span>
+                              </dt>
+                              <dd className="labels">
+                                <span className="labels_1">精选</span>
+                                <span className="labels_2">一起拼</span>
+                              </dd>
+                              <dd className="escp module-subtitle">LIBMAN制造商直供</dd>
+                              <dd className="escp module-title">强韧丁腈家务手套 3双装</dd>
+                              <dd className="last-line">
+                                <span className="comment">744条好评</span>
+                              </dd>
+                            </dl>
+                            </a>
+                      </div>
+                     </div>      
                   </WingBlank>
                 </Tabs.Pane>
                 <Tabs.Pane label="美妆" name="2">配置管理</Tabs.Pane>
