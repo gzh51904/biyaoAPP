@@ -1,0 +1,145 @@
+[33mcommit 3d71e59eb81edfef094cb41797e744c21da7cd55[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/dev[m[33m)[m
+Author: mingheart <13420108226@163.com>
+Date:   Tue Jul 30 22:43:54 2019 +0800
+
+    合并ming
+
+[33mcommit cd1fcd6624807b631dd1cb97383dd9e78ed5e3b0[m
+Merge: 752ab3d efef63f
+Author: mingheart <13420108226@163.com>
+Date:   Tue Jul 30 22:35:54 2019 +0800
+
+    xiu
+
+[33mcommit 752ab3daadd278878e0b68bd1bfc5842bbcdf746[m
+Author: mingheart <13420108226@163.com>
+Date:   Tue Jul 30 22:33:02 2019 +0800
+
+    ming
+
+[33mcommit efef63fd5eaa251a32d5e2094e1309ceececfbb0[m
+Author: Toby“ <340305501@qq.com>
+Date:   Tue Jul 30 11:59:04 2019 +0800
+
+    合并最新
+
+[33mcommit 0d9c9d9b4774a80ad2ac0ad81b1db4aad43f72ab[m
+Author: Toby“ <340305501@qq.com>
+Date:   Tue Jul 30 11:49:49 2019 +0800
+
+    合并后基本样式修改
+
+[33mcommit 684aeff81fdf00cdeacc6df184ef676b2276c0e8[m
+Merge: 195c3fa 23403c4
+Author: Toby“ <340305501@qq.com>
+Date:   Tue Jul 30 10:52:40 2019 +0800
+
+    修改
+
+[33mcommit 195c3faf29b3d722e57f4ee8b0e4c144f56c8206[m
+Merge: 8cf3a8d 23d039c
+Author: Toby“ <340305501@qq.com>
+Date:   Tue Jul 30 10:44:53 2019 +0800
+
+    Merge branch 'dev' of github.com:gzh51904/biyaoAPP into dev
+
+[33mcommit 23403c4f3357ec47de50c4a156f2bb63cd9f37bd[m
+Author: Toby“ <340305501@qq.com>
+Date:   Tue Jul 30 10:43:21 2019 +0800
+
+     首页修改
+
+[33mcommit 23d039c08d776c2c7831d35086a22961ca57bbf3[m
+Author: Eade_Jiang <1085109351@qq.com>
+Date:   Mon Jul 29 23:02:16 2019 +0800
+
+    ....
+
+[33mcommit 4c583c5e9fa428b19aa1b0987414a727be5aeb65[m
+Merge: 22292de d0d111c
+Author: Eade_Jiang <1085109351@qq.com>
+Date:   Mon Jul 29 23:01:46 2019 +0800
+
+    解决合并冲突
+
+[33mcommit 22292decbde5840d537155f371bc75d89782b83c[m
+Author: Eade_Jiang <1085109351@qq.com>
+Date:   Mon Jul 29 22:36:06 2019 +0800
+
+    详情页微调
+
+[33mcommit d0d111cf0e502dc0e9ce0f7dfe3e1205f8ee44f3[m
+Merge: cfa69a1 880623d
+Author: mingheart <13420108226@163.com>
+Date:   Mon Jul 29 21:07:13 2019 +0800
+
+    微调2
+
+[33mcommit cfa69a10680ca6669b5792702608159d489c87d4[m
+Author: mingheart <13420108226@163.com>
+Date:   Mon Jul 29 20:52:26 2019 +0800
+
+    样式微调ming2
+
+[33mcommit 252e77ee6e556b58b86afaccd4b51f96490a4cab[m
+Author: mingheart <13420108226@163.com>
+Date:   Fri Jul 26 16:03:48 2019 +0800
+
+    分页修改2ming
+
+[33mcommit 880623de3545cfb3d83fab39fdc20e072b063c24[m
+Merge: e0b284f 898747b
+Author: mingheart <13420108226@163.com>
+Date:   Thu Jul 25 23:15:34 2019 +0800
+
+    分页修改
+
+[33mcommit e0b284f9cc938b792a143b4acbb0ca6b205933a7[m
+Author: mingheart <13420108226@163.com>
+Date:   Thu Jul 25 22:50:14 2019 +0800
+
+    分页first
+
+[33mcommit 8cf3a8dd58c10c56cd2bcedade6bfe2e5e540eb7[m
+Merge: c5eecc8 898747b
+Author: Toby“ <340305501@qq.com>
+Date:   Thu Jul 25 17:00:42 2019 +0800
+
+    Merge branch 'dev' of github.com:gzh51904/biyaoAPP into dev
+
+[33mcommit c5eecc8cb9f7622ed64b7e69e2798645054eb441[m
+Author: Toby“ <340305501@qq.com>
+Date:   Thu Jul 25 17:00:32 2019 +0800
+
+    xiugai
+
+[33mcommit 898747ba4aad78eed7806cd4a3ea9a1af2ba53d8[m
+Author: Eade_Jiang <1085109351@qq.com>
+Date:   Thu Jul 25 16:46:52 2019 +0800
+
+    购物车页面的编写
+
+[33mcommit eadcb82fa5f7d7526f8fa700912269cbab3a6972[m
+Author: Eade_Jiang <1085109351@qq.com>
+Date:   Wed Jul 24 22:30:26 2019 +0800
+
+    修改部分细节
+
+[33mcommit 96bf5b2a2c0ff190d32afd2ff9e49e022c26943a[m
+Merge: 485429f 0a87d2f
+Author: Eade_Jiang <1085109351@qq.com>
+Date:   Wed Jul 24 22:07:24 2019 +0800
+
+    Merge branch 'dev' of github.com:gzh51904/biyaoAPP into dev
+
+[33mcommit 485429fa06da6249248958eebc00dd7bb060d60a[m
+Author: Eade_Jiang <1085109351@qq.com>
+Date:   Wed Jul 24 21:44:24 2019 +0800
+
+    项目搭建
+
+[33mcommit 0a87d2f1b518d689ae769cd04b1339cf45f41c45[m
+Author: 1901 <123@qq.com>
+Date:   Wed Jul 24 14:54:04 2019 +0800
+
+    src refspec dev does not match any.src refspec dev does not match any.
