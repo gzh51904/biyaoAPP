@@ -3,7 +3,9 @@ import axios from 'axios';
 // axios.defaults.baseURL = 'http://m.biyao.com/floorList'
 
 let instance = axios.create({
-    baseURL: 'http://m.biyao.com'
+    baseURL:  '/api'
+    // '/app'
+    
 })
 
  function get(url='',params={}){
