@@ -51,6 +51,7 @@
 }
 
 #z .personal ul li {
+  padding-top: 00.1rem;
   width: .88rem;
   text-align: center;
   margin-left: .24rem;
@@ -247,7 +248,8 @@
   width: 100%;
 }
 
-#z .entry-wrapper {
+#z personal
+.entry-wrapper {
   margin-top: .16rem;
   overflow: hidden;
 }
@@ -289,14 +291,13 @@
 #z .entry-text {
   margin-top: .16rem;
   height: .34rem;
-  line-height: .34rem;
+  line-height: .4rem;
   font-size: .24rem;
   color: #666;
   text-align: center;
 }
 
 #z .entry-icon .icon {
-  position: absolute;
   width: .44rem;
   height: .44rem;
 }

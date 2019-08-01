@@ -88,7 +88,7 @@ class App extends Component {
   render() {
     let { navs } = this.state;
     return (
-      <div id="all">
+     
       <div className="App">
         <Switch>
           {navs.map(item => (
@@ -120,16 +120,18 @@ class App extends Component {
           onClick={this.handleClick}
           selectedKeys={[this.state.current]}
           mode="horizontal"
+          style={{width:"100%",display:"flex",flexDirection:"row",fontSize:"0.28rem",padding:0,margin:0,textAlign:"center"}}
+
         >
           {navs.map(item => (
-            <Menu.Item key={item.name}>
+            <Menu.Item key={item.name}  style={{height:"100%",flex:1,padding:0,margin:0}}>
               <Icon type={item.icon} />
               {item.title}
             </Menu.Item>
           ))}
         </Menu>
       </div>
-      </div>
+      
     );
   }
 }

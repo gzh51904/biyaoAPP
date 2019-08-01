@@ -114,7 +114,9 @@ class Mine extends Component{
                     <div className="entry-item" data-id="15" data-index="0" data-nature-index="0">
                         <div className="entry-icon">
                             <img className="icon" src="https://bfs.biyao.com/group1/M00/16/F7/rBACW10kgxmATVnNAAAPCZYRFq4043.png" />
-                            </div><h4 className="entry-text">每日挖宝</h4></div>
+                        
+						</div>
+							<h4 className="entry-text">每日挖宝</h4></div>
                     </li>
                 </ul>
                 <div className="iScrollHorizontalScrollbar iScrollLoneScrollbar" style={{overflow: "hidden", pointerEvents:" none",display: "none"}}>

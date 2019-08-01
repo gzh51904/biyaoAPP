@@ -47,6 +47,7 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
     display: flex;
 }
 .personal ul li {
+    padding-top:00.1rem;
     width: .88rem;
     text-align: center;
     margin-left: .24rem;
@@ -191,7 +192,7 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
 }.order-panel .order-line img {
     width: 100%;
 }
-
+personal
 .entry-wrapper {
     margin-top: .16rem;
     overflow: hidden;
@@ -219,15 +220,15 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
     vertical-align: -.15em;
     fill: currentColor;
     overflow: hidden;
-}.entry-text {
+} .entry-text {
     margin-top: .16rem;
     height: .34rem;
-    line-height: .34rem;
+    line-height: .4rem;
     font-size: .24rem;
     color: #666;
     text-align: center;
 }.entry-icon .icon {
-    position: absolute;   
+  
     width: .44rem;
     height: .44rem;
 }
