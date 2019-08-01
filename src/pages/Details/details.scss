@@ -1,5 +1,11 @@
 #j{
-
+    z-index: 998;
+    .anticon{
+        font-size:.24rem !important;
+    }
+    .anticon-close-circle,.anticon-message{
+        font-size:.44rem !important;
+    }
 #by_w {
     width: 7.5rem;
 }
@@ -1991,6 +1997,7 @@ a {
 .choose-size-wrap-fadeIn {
     transform: translate3D(0,0,0);
     -webkit-transform: translate3D(0,0,0);
+    z-index: 998;
 }
 .dialog-house {
     display: none;
@@ -2010,5 +2017,13 @@ a {
     color: #fff;
     font-size: .28rem;
 }
-
+.tuijian .slick-slide {
+    width: 2.4rem !important;
+}
+.tuijian .slick-track{
+    width:22rem !important;
+}
+.num span{
+    top:0 !important;
+}
 }

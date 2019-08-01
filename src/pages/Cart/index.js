@@ -38,7 +38,7 @@ class Cart extends Component{
                 "https://www.easy-mock.com/mock/5d3e59693e03d22c77116ea1/example/cart"
             )
             .then(function (response) {
-                console.log(response.data.data);
+                // console.log(response.data.data);
                 // console.log(response.data.data.length)
                 
                 _this.setState({
@@ -48,7 +48,7 @@ class Cart extends Component{
                 
             })
             .catch(function (error) {
-                console.log(error);
+                // console.log(error);
                 _this.setState({
                     isLoaded: false,
                     error: error
@@ -60,15 +60,49 @@ class Cart extends Component{
     }
     
 
-    choose(){
-        if(this.state.class_name === 'none'){
-            this.setState({
-                class_name:'block',
+    choose(idx){
+        console.log(idx)
+        console.log(!idx)
+        if(idx===null){
+            if(this.state.class_name === 'none'){
+                this.setState(state=>{
+                    state.goodslist.forEach(item => {
+                        item.status = "open"
+                    });
+                return { class_name:'block',
+                goodslist:state.goodslist
+                        }
             })
-        }else if(this.state.class_name === 'block'){
-            this.setState({
-                class_name:'none',
-            })
+            }
+            if(this.state.class_name === 'block'){
+                this.setState(state=>{
+                    state.goodslist.forEach(item => {
+                        item.status = "close"
+                    });
+                return { class_name:'none',
+                goodslist:state.goodslist
+                        }
+                })
+            }
+        }
+        
+        // console.log(this.state.goodslist[idx].status)
+        // console.log(idx=={})
+        if(idx!==null){
+            if(this.state.goodslist[idx].status === 'close'){
+                this.setState((state)=>{
+                    state.goodslist[idx].status = "open"
+                    // console.log(55)
+                    return {goodslist:state.goodslist}
+                })
+            }
+            if(this.state.goodslist[idx].status === 'open'){
+                this.setState((state)=>{
+                    state.goodslist[idx].status = "close"
+                    // console.log(66)
+                    return {goodslist:state.goodslist}
+                })
+            }
         }
     }
  
@@ -78,11 +112,24 @@ class Cart extends Component{
                 class_change:'block',
                 class_change2:'block'
             })
+            this.state.goodslist.forEach((item,idx)=>{
+                this.refs["edit"+idx].innerHTML = "完成"
+                this.refs["a"+idx].style.display="none"
+                this.refs["b"+idx].style.display="block"
+            })
+            return
         }else if(this.state.class_change === 'block'){
             this.setState({
                 class_change:'none',
                 class_change2:'none'
             })
+            this.state.goodslist.forEach((item,idx)=>{
+                
+                this.refs["edit"+idx].innerHTML = "编辑"
+                this.refs["a"+idx].style.display="block"
+                this.refs["b"+idx].style.display="none"
+            })
+            return
         }
 
         
@@ -102,26 +149,28 @@ class Cart extends Component{
     }
 
     oneChange(idx,id){
-        console.log('id:',id)
-        console.log('idx:',this.refs["a"+idx])
+        // console.log('id:',id)
+        // console.log('idx:',this.refs["a"+idx])
 
 
  
         if(this.refs["a"+idx].style.display==="none"){
-            console.log(1)
+            // console.log(1)
+            this.refs["edit"+idx].innerHTML = "编辑"
             this.refs["a"+idx].style.display="block"
             this.refs["b"+idx].style.display="none"
 
             return
         }if(this.refs["a"+idx].style.display==="block"){
-            console.log(2)
+            // console.log(2)
+            this.refs["edit"+idx].innerHTML = "完成"
             this.refs["a"+idx].style.display="none"
             this.refs["b"+idx].style.display="block"
             return
         }
         
-        console.log(this.state.goodslist[idx].id)
-        console.log(this.state.goodslist.length)
+        // console.log(this.state.goodslist[idx].id)
+        // console.log(this.state.goodslist.length)
 
         // let data = this.state.goodslist;
         // data = data.map(item=>{
@@ -143,16 +192,13 @@ class Cart extends Component{
     }
 
     onChange(idx) {
-        console.log(this.refs["btn"+idx].state.value);
+        // console.log(this.refs["btn"+idx].state.value);
         this.total()
        this.refs["num"+idx].innerHTML =this.refs["btn"+idx].state.value
     }
 
     render(){
         let {goodslist} = this.state;
-        if(!this.state.isLoaded){
-            return <div>加载失败！</div>
-        }else{
             return (
                 //购物车不为空时
                 <>
@@ -171,13 +217,15 @@ class Cart extends Component{
                                 return (
                                     <div className="shop-panel" key={idx}>
                                         <div className="shop-panel-store border-b-1 clear">
-                                            <div className={['float-right ', this.state.class_change2==='none'?'':'none'].join('')} onClick={this.oneChange.bind(item,idx,item.id)}><span className="store-edit" data-edit="1">{this.state.class_oneChange==='none'?'编辑':'完成'}</span></div>
+                                            <div className={['float-right ', this.state.class_change2==='none'?'':'none'].join('')} onClick={this.oneChange.bind(item,idx,item.id)}>
+                                                <span className="store-edit" data-edit="1" ref={'edit'+idx}>编辑</span>
+                                            </div>
                                             <div className="float-left">
-                                                <b className="store-check" onClick={this.choose.bind(this)}>
-                                                    <span className={['nocheck ', this.state.class_name==='none'?'none':''].join('')}>
+                                                <b className="store-check" onClick={this.choose.bind(this,idx)}>
+                                                    <span className={['nocheck ', this.state.goodslist[idx].status==='close'?'none':''].join('')} >
                                                         <Icon className="icon" type="border" style={{ fontSize: '16px', color: '#ccc' }}/>
                                                     </span>
-                                                    <span className={['checked ', this.state.class_name==='none'?'':'none'].join('')}>
+                                                    <span className={['checked ', this.state.goodslist[idx].status==='close'?'':'none'].join('')}>
                                                         <Icon className="icon" type="check-circle" theme="filled" style={{ fontSize: '16px', color: '#7f4395' }}/>
                                                     </span>
                                                 </b>
@@ -191,11 +239,11 @@ class Cart extends Component{
                                         <div className="shop-panel-product-set">
                                             <div className="shop-panel-product-item border-b-1 clear">
                                                 <div className="float-left icon-radio" >
-                                                    <b className="su-check" onClick={this.choose.bind(this)}>
-                                                        <span className={['nocheck ', this.state.class_name==='none'?'none':''].join('')} data-shopcarid="813235277" data-specialproducttype="0">
+                                                    <b className="su-check" onClick={this.choose.bind(this,idx)}>
+                                                        <span className={['nocheck ', this.state.goodslist[idx].status==='close'?'none':''].join('')} data-shopcarid="813235277" data-specialproducttype="0">
                                                             <Icon className="icon" type="border" style={{ fontSize: '16px', color: '#ccc' }}/>
                                                         </span>
-                                                        <span className={['checked ', this.state.class_name==='none'?'':'none'].join('')} data-shopcarid="813235277" data-specialproducttype="0">
+                                                        <span className={['checked ', this.state.goodslist[idx].status==='close'?'':'none'].join('')} data-shopcarid="813235277" data-specialproducttype="0">
                                                             <Icon className="icon" type="check-circle" theme="filled" style={{ fontSize: '16px', color: '#7f4395' }}/>
                                                         </span>
                                                     </b>
@@ -253,7 +301,7 @@ class Cart extends Component{
                         <p className="surfing-price" style={{marginBottom: 0}}></p>
                     </div>
                     <div className="float-left">
-                        <div id="checkAll" onClick={this.choose.bind(this)}>
+                        <div id="checkAll" onClick={this.choose.bind(this,null)}>
                             <span className={['nocheck ', this.state.class_name==='none'?'none':''].join('')}>
                                 <Icon className="icon" type="border" style={{ fontSize: '16px', color: '#ccc' }}/>
                             </span>
@@ -299,7 +347,7 @@ class Cart extends Component{
                 //         <a href="/">去逛逛</a>
                 //     </div>
                 // </div> 
-            )}
+            )
     }
 }
 

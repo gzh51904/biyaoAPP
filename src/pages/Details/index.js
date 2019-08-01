@@ -34,6 +34,7 @@ class Details extends Component{
         this.chooseColor = this.chooseColor.bind(this)
         this.buy = this.buy.bind(this)
         this.success = this.success.bind(this)
+        this.login = this.login.bind(this)
 
     }
 
@@ -114,6 +115,10 @@ class Details extends Component{
 
       };
     
+    login(){
+        this.props.history.push(this.props.history.location.pathname+"/login");
+    }
+
     render(mountNode) {
         // let {add2cart,changeQty,goodslist} = this.props;
 
@@ -497,98 +502,100 @@ class Details extends Component{
                                 <span className="iconfont"><Icon type="right"/></span>
                             </div>
                         </div>
-                        <div className="sipplier-img-wrap">
-                            <ul className="commend-list">
-                                <li data-href="/products/1303005013010000001.html?stp=%7B%22rpvid%22%3A%223a4efe97-1564044701416-e33ae964eb%22%2C%22spm%22%3A%221.500017.products_recommendClassify.0%22%7D&amp;jumpTog=1"
-                                    className="aLinkJump"><a className="commend-list-a" href="javascript:;">
-                                        <div className="recommend-pic">
-                                            <img src="https://bfs.biyao.com/group1/M00/41/A5/rBACVF05Y3eAae40AACDdeXea9I963.jpg"/>
-                                        </div>
-                                        <p className="recommend-tit inaline commend-list-tit ">海盐净螨皂</p>
-                                        <p className="item-labels"><span style={{background:"",color:'#FB4C81',borderColor:"#FB4C81"}}>一起拼</span></p>
-                                        <p className="item-price"><i>￥</i><span className="item-only-int">59</span></p>
-                                    </a>
-                                </li>
-                                <li data-href="/products/1303005005010000001.html?stp=%7B%22rpvid%22%3A%223a4efe97-1564044701416-e33ae964eb%22%2C%22spm%22%3A%221.500017.products_recommendgoods.0%22%7D&amp;jumpTog=1"
-                                    className="aLinkJump"><a className="commend-list-a" href="javascript:;">
-                                        <div className="recommend-pic"><img src="https://bfs.biyao.com/group1/M00/17/A2/rBACYV0lWWKACdlTAACNwTVhglU236.jpg" alt=""/>
-                                        </div>
-                                        <p className="recommend-tit inaline commend-list-tit ">柔情缪斯之吻口红</p>
-                                        <p className="item-labels"><span style={{background:'',color:'#FB4C81',borderColor:"#FB4C81"}}>一起拼</span></p>
-                                        <p className="item-price"><i>￥</i><span className="item-only-int">88</span></p>
-                                    </a>
-                                </li>
-                                <li data-href="/products/1303005012010000001.html?stp=%7B%22rpvid%22%3A%223a4efe97-1564044701416-e33ae964eb%22%2C%22spm%22%3A%221.500017.products_recommendgoods.0%22%7D&amp;jumpTog=1"
-                                    className="aLinkJump"><a className="commend-list-a" href="javascript:;">
-                                        <div className="recommend-pic">
-                                            <img src="https://bfs.biyao.com/group1/M00/38/2A/rBACVF0xJhuAUc9wAAB2O1IbHBA368.jpg" alt=""/>
-                                        </div>
-                                        <p className="recommend-tit inaline commend-list-tit ">珍爱缪斯无瑕粉底液</p>
-                                        <p className="item-labels"><span style={{background:'',color:'#FB4C81',borderColor:'#FB4C81'}}>一起拼</span></p>
-                                        <p className="item-price"><i>￥</i><span className="item-only-int">79</span></p>
-                                    </a>
-                                </li>
-                                <li data-href="/products/1303005007010000001.html?stp=%7B%22rpvid%22%3A%223a4efe97-1564044701416-e33ae964eb%22%2C%22spm%22%3A%221.500017.products_recommendgoods.0%22%7D&amp;jumpTog=1"
-                                    className="aLinkJump"><a className="commend-list-a" href="javascript:;">
-                                        <div className="recommend-pic"><img
-                                                src="https://bfs.biyao.com/group1/M00/04/24/rBACVF0bN1-ASeVCAAAjHfa1mos702.jpg" alt=""/>
-                                        </div>
-                                        <p className="recommend-tit inaline commend-list-tit ">冰肌丝滑隔离乳</p>
-                                        <p className="item-labels"><span
-                                                style={{background:'',color:'#FB4C81',borderColor:"#FB4C81"}}>一起拼</span></p>
-                                        <p className="item-price"><i>￥</i><span className="item-only-int">69</span></p>
-                                    </a>
-                                </li>
-                                <li data-href="/products/1303005002010000001.html?stp=%7B%22rpvid%22%3A%223a4efe97-1564044701416-e33ae964eb%22%2C%22spm%22%3A%221.500017.products_recommendgoods.0%22%7D&amp;jumpTog=1"
-                                    className="aLinkJump"><a className="commend-list-a" href="javascript:;">
-                                        <div className="recommend-pic"><img
-                                                src="https://bfs.biyao.com/group1/M00/F3/EF/rBACYV0Bs4SAL7sqAAB4kquPoHQ833.jpg" alt=""/>
-                                        </div>
-                                        <p className="recommend-tit inaline commend-list-tit ">水漾润妍舒缓亲肌膜</p>
-                                        <p className="item-labels"><span style={{background:'',color:'#FB4C81',borderColor:"#FB4C81"}}>一起拼</span></p>
-                                        <p className="item-price"><i>￥</i><span className="item-only-int">69</span></p>
-                                    </a>
-                                </li>
-                                <li data-href="/products/1303005011010000001.html?stp=%7B%22rpvid%22%3A%223a4efe97-1564044701416-e33ae964eb%22%2C%22spm%22%3A%221.500017.products_recommendgoods.0%22%7D&amp;jumpTog=1"
-                                    className="aLinkJump"><a className="commend-list-a" href="javascript:;">
-                                        <div className="recommend-pic"><img src="https://bfs.biyao.com/group1/M00/37/94/rBACW10u37qAemYSAABudWM93q4737.jpg"/>
-                                        </div>
-                                        <p className="recommend-tit inaline commend-list-tit ">蚕丝手工皂</p>
-                                        <p className="item-labels"><span style={{background:"",color:'#FB4C81',borderColor:"#FB4C81"}}>一起拼</span></p>
-                                        <p className="item-price"><i>￥</i><span className="item-only-int">59</span></p>
-                                    </a>
-                                </li>
-                                <li data-href="/products/1303005006010000001.html?stp=%7B%22rpvid%22%3A%223a4efe97-1564044701416-e33ae964eb%22%2C%22spm%22%3A%221.500017.products_recommendgoods.0%22%7D&amp;jumpTog=1"
-                                    className="aLinkJump"><a className="commend-list-a" href="javascript:;">
-                                        <div className="recommend-pic">
-                                            <img src="https://bfs.biyao.com/group1/M00/00/74/rBACW10TP8qAK7vuAABOR1drRTE015.jpg" alt=""/>
-                                        </div>
-                                        <p className="recommend-tit inaline commend-list-tit ">流金润唇膏</p>
-                                        <p className="item-labels"><span style={{background:"",color:'#FB4C81',borderColor:"#FB4C81"}}>一起拼</span></p>
-                                        <p className="item-price"><i>￥</i><span className="item-only-int">98</span></p>
-                                    </a>
-                                </li>
-                                <li data-href="/products/1303005004010000001.html?stp=%7B%22rpvid%22%3A%223a4efe97-1564044701416-e33ae964eb%22%2C%22spm%22%3A%221.500017.products_recommendgoods.0%22%7D&amp;jumpTog=1"
-                                    className="aLinkJump"><a className="commend-list-a" href="javascript:;">
-                                        <div className="recommend-pic">
-                                            <img src="https://bfs.biyao.com/group1/M00/FA/3E/rBACVF0MejmAPHdOAABkrmDKuEc057.jpg" alt=""/>
-                                        </div>
-                                        <p className="recommend-tit inaline commend-list-tit ">摩登缪斯精华粉底液</p>
-                                        <p className="item-labels"><span style={{background:"",color:'#FB4C81',borderColor:"#FB4C81"}}>一起拼</span></p>
-                                        <p className="item-price"><i>￥</i><span className="item-only-int">109</span></p>
-                                    </a>
-                                </li>
-                                <li data-href="/products/1303005001010000001.html?stp=%7B%22rpvid%22%3A%223a4efe97-1564044701416-e33ae964eb%22%2C%22spm%22%3A%221.500017.products_recommendgoods.0%22%7D&amp;jumpTog=1"
-                                    className="aLinkJump"><a className="commend-list-a" href="javascript:;">
-                                        <div className="recommend-pic">
-                                            <img src="https://bfs.biyao.com/group1/M00/F3/7D/rBACYV0A1xaAL7qZAACbqGSdmy8410.jpg" alt=""/>
-                                        </div>
-                                        <p className="recommend-tit inaline commend-list-tit ">双雪赋活亮肌膜</p>
-                                        <p className="item-labels"><span style={{background:"",color:'#FB4C81',borderColor:"#FB4C81"}}>一起拼</span></p>
-                                        <p className="item-price"><i>￥</i><span className="item-only-int">88</span></p>
-                                    </a>
-                                </li>
-                            </ul>
+                        <div className="sipplier-img-wrap tuijian commend-list" style={{transformStyle: "preserve-3d", position: 'relative'}}>
+                            {/* <ul className="commend-list"> */}
+                                <Slider {...settings} >
+                                    <li data-href="/products/1303005013010000001.html?stp=%7B%22rpvid%22%3A%223a4efe97-1564044701416-e33ae964eb%22%2C%22spm%22%3A%221.500017.products_recommendClassify.0%22%7D&amp;jumpTog=1"
+                                        className="aLinkJump"><a className="commend-list-a" href="javascript:;">
+                                            <div className="recommend-pic">
+                                                <img src="https://bfs.biyao.com/group1/M00/41/A5/rBACVF05Y3eAae40AACDdeXea9I963.jpg"/>
+                                            </div>
+                                            <p className="recommend-tit inaline commend-list-tit ">海盐净螨皂</p>
+                                            <p className="item-labels"><span style={{background:"",color:'#FB4C81',borderColor:"#FB4C81"}}>一起拼</span></p>
+                                            <p className="item-price"><i>￥</i><span className="item-only-int">59</span></p>
+                                        </a>
+                                    </li>
+                                    <li data-href="/products/1303005005010000001.html?stp=%7B%22rpvid%22%3A%223a4efe97-1564044701416-e33ae964eb%22%2C%22spm%22%3A%221.500017.products_recommendgoods.0%22%7D&amp;jumpTog=1"
+                                        className="aLinkJump"><a className="commend-list-a" href="javascript:;">
+                                            <div className="recommend-pic"><img src="https://bfs.biyao.com/group1/M00/17/A2/rBACYV0lWWKACdlTAACNwTVhglU236.jpg" alt=""/>
+                                            </div>
+                                            <p className="recommend-tit inaline commend-list-tit ">柔情缪斯之吻口红</p>
+                                            <p className="item-labels"><span style={{background:'',color:'#FB4C81',borderColor:"#FB4C81"}}>一起拼</span></p>
+                                            <p className="item-price"><i>￥</i><span className="item-only-int">88</span></p>
+                                        </a>
+                                    </li>
+                                    <li data-href="/products/1303005012010000001.html?stp=%7B%22rpvid%22%3A%223a4efe97-1564044701416-e33ae964eb%22%2C%22spm%22%3A%221.500017.products_recommendgoods.0%22%7D&amp;jumpTog=1"
+                                        className="aLinkJump"><a className="commend-list-a" href="javascript:;">
+                                            <div className="recommend-pic">
+                                                <img src="https://bfs.biyao.com/group1/M00/38/2A/rBACVF0xJhuAUc9wAAB2O1IbHBA368.jpg" alt=""/>
+                                            </div>
+                                            <p className="recommend-tit inaline commend-list-tit ">珍爱缪斯无瑕粉底液</p>
+                                            <p className="item-labels"><span style={{background:'',color:'#FB4C81',borderColor:'#FB4C81'}}>一起拼</span></p>
+                                            <p className="item-price"><i>￥</i><span className="item-only-int">79</span></p>
+                                        </a>
+                                    </li>
+                                    <li data-href="/products/1303005007010000001.html?stp=%7B%22rpvid%22%3A%223a4efe97-1564044701416-e33ae964eb%22%2C%22spm%22%3A%221.500017.products_recommendgoods.0%22%7D&amp;jumpTog=1"
+                                        className="aLinkJump"><a className="commend-list-a" href="javascript:;">
+                                            <div className="recommend-pic"><img
+                                                    src="https://bfs.biyao.com/group1/M00/04/24/rBACVF0bN1-ASeVCAAAjHfa1mos702.jpg" alt=""/>
+                                            </div>
+                                            <p className="recommend-tit inaline commend-list-tit ">冰肌丝滑隔离乳</p>
+                                            <p className="item-labels"><span
+                                                    style={{background:'',color:'#FB4C81',borderColor:"#FB4C81"}}>一起拼</span></p>
+                                            <p className="item-price"><i>￥</i><span className="item-only-int">69</span></p>
+                                        </a>
+                                    </li>
+                                    <li data-href="/products/1303005002010000001.html?stp=%7B%22rpvid%22%3A%223a4efe97-1564044701416-e33ae964eb%22%2C%22spm%22%3A%221.500017.products_recommendgoods.0%22%7D&amp;jumpTog=1"
+                                        className="aLinkJump"><a className="commend-list-a" href="javascript:;">
+                                            <div className="recommend-pic"><img
+                                                    src="https://bfs.biyao.com/group1/M00/F3/EF/rBACYV0Bs4SAL7sqAAB4kquPoHQ833.jpg" alt=""/>
+                                            </div>
+                                            <p className="recommend-tit inaline commend-list-tit ">水漾润妍舒缓亲肌膜</p>
+                                            <p className="item-labels"><span style={{background:'',color:'#FB4C81',borderColor:"#FB4C81"}}>一起拼</span></p>
+                                            <p className="item-price"><i>￥</i><span className="item-only-int">69</span></p>
+                                        </a>
+                                    </li>
+                                    <li data-href="/products/1303005011010000001.html?stp=%7B%22rpvid%22%3A%223a4efe97-1564044701416-e33ae964eb%22%2C%22spm%22%3A%221.500017.products_recommendgoods.0%22%7D&amp;jumpTog=1"
+                                        className="aLinkJump"><a className="commend-list-a" href="javascript:;">
+                                            <div className="recommend-pic"><img src="https://bfs.biyao.com/group1/M00/37/94/rBACW10u37qAemYSAABudWM93q4737.jpg"/>
+                                            </div>
+                                            <p className="recommend-tit inaline commend-list-tit ">蚕丝手工皂</p>
+                                            <p className="item-labels"><span style={{background:"",color:'#FB4C81',borderColor:"#FB4C81"}}>一起拼</span></p>
+                                            <p className="item-price"><i>￥</i><span className="item-only-int">59</span></p>
+                                        </a>
+                                    </li>
+                                    <li data-href="/products/1303005006010000001.html?stp=%7B%22rpvid%22%3A%223a4efe97-1564044701416-e33ae964eb%22%2C%22spm%22%3A%221.500017.products_recommendgoods.0%22%7D&amp;jumpTog=1"
+                                        className="aLinkJump"><a className="commend-list-a" href="javascript:;">
+                                            <div className="recommend-pic">
+                                                <img src="https://bfs.biyao.com/group1/M00/00/74/rBACW10TP8qAK7vuAABOR1drRTE015.jpg" alt=""/>
+                                            </div>
+                                            <p className="recommend-tit inaline commend-list-tit ">流金润唇膏</p>
+                                            <p className="item-labels"><span style={{background:"",color:'#FB4C81',borderColor:"#FB4C81"}}>一起拼</span></p>
+                                            <p className="item-price"><i>￥</i><span className="item-only-int">98</span></p>
+                                        </a>
+                                    </li>
+                                    <li data-href="/products/1303005004010000001.html?stp=%7B%22rpvid%22%3A%223a4efe97-1564044701416-e33ae964eb%22%2C%22spm%22%3A%221.500017.products_recommendgoods.0%22%7D&amp;jumpTog=1"
+                                        className="aLinkJump"><a className="commend-list-a" href="javascript:;">
+                                            <div className="recommend-pic">
+                                                <img src="https://bfs.biyao.com/group1/M00/FA/3E/rBACVF0MejmAPHdOAABkrmDKuEc057.jpg" alt=""/>
+                                            </div>
+                                            <p className="recommend-tit inaline commend-list-tit ">摩登缪斯精华粉底液</p>
+                                            <p className="item-labels"><span style={{background:"",color:'#FB4C81',borderColor:"#FB4C81"}}>一起拼</span></p>
+                                            <p className="item-price"><i>￥</i><span className="item-only-int">109</span></p>
+                                        </a>
+                                    </li>
+                                    <li data-href="/products/1303005001010000001.html?stp=%7B%22rpvid%22%3A%223a4efe97-1564044701416-e33ae964eb%22%2C%22spm%22%3A%221.500017.products_recommendgoods.0%22%7D&amp;jumpTog=1"
+                                        className="aLinkJump"><a className="commend-list-a" href="javascript:;">
+                                            <div className="recommend-pic">
+                                                <img src="https://bfs.biyao.com/group1/M00/F3/7D/rBACYV0A1xaAL7qZAACbqGSdmy8410.jpg" alt=""/>
+                                            </div>
+                                            <p className="recommend-tit inaline commend-list-tit ">双雪赋活亮肌膜</p>
+                                            <p className="item-labels"><span style={{background:"",color:'#FB4C81',borderColor:"#FB4C81"}}>一起拼</span></p>
+                                            <p className="item-price"><i>￥</i><span className="item-only-int">88</span></p>
+                                        </a>
+                                    </li>
+                                </Slider>
+                            {/* </ul> */}
                         </div>
                     </section>
                     {/* <!--  3.详情details -->
@@ -677,7 +684,7 @@ class Details extends Component{
                     </div>
                 </div>
                 <div className="gl-footer">
-                    <div className="gl-other-wrap">
+                    <div className="gl-other-wrap" onClick={this.login.bind(this)}>
                         <a className="customer-service">
                             <i className="gl-icon font-icon-server iconfont"><Icon type="message" /></i>
                             <span className="gl-service-text" id="liveServerBtn">客服</span>
@@ -776,7 +783,7 @@ class Details extends Component{
                                 {/* <!-- 选择数量 --> */}
                                 <div className="choose-num-wrap">
                                     <div className="choose-num-test">购买数量</div>
-                                    <InputNumber size="small" defaultValue={this.state.value} onChange={this.onChange.bind(this)} min="1" max="20"></InputNumber>
+                                    <InputNumber size="small" defaultValue={this.state.value} onChange={this.onChange.bind(this)} min="1" max="20" className="num"></InputNumber>
                                 </div>
                                 <div className="group-limit-num none">限购1件</div>
                             </div>
@@ -786,7 +793,7 @@ class Details extends Component{
                             <div className="no-store-btn none">原材料库存不足</div>
                             <ul className="choose-bottom-btn-wrap">
                                 <li className="buy-shopcar-alone buy-alone" onClick={this.success.bind(this)}>加入购物车</li>
-                                <li className="eventLink buy-now-choose buy-alone buy-go-alone">立即购买</li>
+                                <li className="eventLink buy-now-choose buy-alone buy-go-alone" onClick={this.login.bind(this)}>立即购买</li>
                                 <li className="no-store-btn none">原材料库存不足</li>
                                 <li className="eventLink buy-now-choose buy-go-group none" style={{width: '7.5rem',height: '0.98rem'}}>
                                     <div className="buy-go-group-tip">
