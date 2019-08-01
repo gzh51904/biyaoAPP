@@ -40,13 +40,13 @@
 .el-tabs__content{
    padding-top:1.6rem;
 }
-.ant-carousel .slick-slide {
-    text-align: center;
-    height: 160px;
-    line-height: 160px;
-    background: #364d79;
-    overflow: hidden;
-  }
+// .ant-carousel .slick-slide {
+//     text-align: center;
+//     height: 160px;
+//     line-height: 160px;
+//     background: #364d79;
+//     overflow: hidden;
+//   }
   
   .ant-carousel .slick-slide h3 {
     color: #fff;
@@ -61,16 +61,7 @@
     background-color: #fff;
     padding: 0 .3rem;
 }
-.guarantee_g span {
-    display: inline-block;
-    font-family: PingFangSC-Regular;
-    color: #9687A4;
-    font-size: .24rem;
-    text-align: left;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
+
 .guarantee_g span.icon-line {
     background: url(https://static.biyao.com/mnew/img/master/index/separation_line@2x_fdcbbcd.png) no-repeat center;
     width: .2rem;
@@ -81,7 +72,7 @@
     display: inline-block;
     font-family: PingFangSC-Regular;
     color: #9687A4;
-    font-size: .24rem;
+    font-size: .32rem;
     text-align: left;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -103,7 +94,7 @@ span.icon-line{
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    margin: 0 .1rem;
+    margin: 0 .24rem;
 }
 .titleline-box {
     width: 100%;
@@ -235,3 +226,4 @@ span.icon-line{
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
 }
+// .App{height: 3000px;}

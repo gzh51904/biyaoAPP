@@ -1,14 +1,15 @@
 import React,{Component} from 'react';
 
 import { Button,Input,Tabs,} from 'element-react';
-// import { Carousel } from 'antd';
+import { BackTop } from 'antd';
 import { Carousel, WingBlank }from 'antd-mobile'; // 加载 JS
 import 'antd-mobile/lib/date-picker/style/css'; 
 // import 'antd/dist/antd.css';
 import 'element-theme-default';
 import './home.scss';
 import 'http-proxy-middleware';
-import {api} from '../utils';
+// import {api} from '../utils';
+
 class Home extends Component{
     constructor(){
         super();
@@ -32,12 +33,12 @@ class Home extends Component{
         this.goto = this.goto.bind(this);
     }
     //请求数据
-        async componentWillMount(){
-          let res = await api.get('floorList?pageIndex=1',{
+        // async componentWillMount(){
+        //   let res = await api.get('floorList?pageIndex=1',{
 
-          })
-          console.log(res)
-        }
+        //   })
+        //   console.log(res)
+        // }
         //走马灯
         componentDidMount(){
           // simulate img loading
@@ -64,6 +65,7 @@ class Home extends Component{
     render() {
         return (
           <div>
+            <BackTop visibilityHeight={1} />
             <div className="nav_lz">  
               <Input
                 icon="search"
@@ -124,8 +126,8 @@ class Home extends Component{
                     </div>
                     <div className="doubleRowList">
                       <div className="module-list">
-                        <a className="recommendLinkJump">
-                          <img src="https://bfs.biyao.com/group1/M00/5D/D2/rBACYVuxjUuABuHaAAB0wcL8WiU579.jpg"/>
+                        <a className="recommendLinkJump" type="1" onClick={this.goto.bind(this)}>
+                          <img src="https://bfs.biyao.com/group1/M00/F8/52/rBACYV0IN4WAUb2wAAA3gI4Vba0565.jpg"/>
                             <dl id="shop-show">
                               <dt className="price">
                                 <span>￥</span><span>98</span>
@@ -134,16 +136,16 @@ class Home extends Component{
                                 <span className="labels_1">精选</span>
                                 <span className="labels_2">一起拼</span>
                               </dd>
-                              <dd className="escp module-subtitle">LA MER原料制造商直供</dd>
-                              <dd className="escp module-title">冻干多肽抗皱面膜 8片</dd>
-                              <dd className="last-line"><span className="comment">853条好评</span>
+                              <dd className="escp module-subtitle">GIVENCHY制造商直供</dd>
+                              <dd className="escp module-title">魅力缪斯清透散粉</dd>
+                              <dd className="last-line"><span className="comment">194条好评</span>
                               </dd>
                             </dl>
                             </a>
                       </div>
                       <div className="module-list">
                            <a className="recommendLinkJump" href="javascript:void(0);" data-href="/products/1301755051010000001.html?stp=%7B%22rpvid%22%3A%22a365ed06-1564391110906-2ddeddce20%22%2C%22spm%22%3A%221.500001.moses%3Apid_25.f%7C1%7C1%7C1%22%2C%22aid%22%3A%22%7B%5C%22rcd%5C%22%3A%5C%2200285604712746d0.1564391111495%5C%22%7D%22%7D&amp;jumpTog=1">
-                           <img src="https://bfs.biyao.com/group1/M00/2E/11/rBACVFqiIGyAM2znAABUq-P7T8Y111.jpg"/>
+                           <img src="https://bfs.biyao.com/group1/M00/2D/41/rBACW1p7wDiAG_pjAABzGpE1Iq8088.jpg"/>
                             <dl id="shop-show">
                               <dt className="price">
                                   <span>￥</span><span>59</span>
@@ -152,8 +154,8 @@ class Home extends Component{
                                 <span className="labels_1">精选</span>
                                 <span className="labels_2">一起拼</span>
                               </dd>
-                              <dd className="escp module-subtitle">LIBMAN制造商直供</dd>
-                              <dd className="escp module-title">强韧丁腈家务手套 3双装</dd>
+                              <dd className="escp module-subtitle">CLINIQUE原料制造商直供</dd>
+                              <dd className="escp module-title">活泉净透洁面乳</dd>
                               <dd className="last-line">
                                 <span className="comment">744条好评</span>
                               </dd>
@@ -386,29 +388,29 @@ class Home extends Component{
                       </div>
                      </div>      
                 </Tabs.Pane>
-                <Tabs.Pane label="女装" name="4">定时补偿任务</Tabs.Pane>
-                <Tabs.Pane label="男装" name="5">用户管理</Tabs.Pane>
-                <Tabs.Pane label="箱包" name="6">配置管理</Tabs.Pane>
-                <Tabs.Pane label="内衣配饰" name="7">角色管理</Tabs.Pane>
-                <Tabs.Pane label="鞋靴" name="8">定时补偿任务</Tabs.Pane>
-                <Tabs.Pane label="家纺" name="9">用户管理</Tabs.Pane>
-                <Tabs.Pane label="眼镜" name="10">配置管理</Tabs.Pane>
-                <Tabs.Pane label="电器" name="11">角色管理</Tabs.Pane>
-                <Tabs.Pane label="数码" name="12">定时补偿任务</Tabs.Pane>
-                <Tabs.Pane label="餐厨" name="13">用户管理</Tabs.Pane>
-                <Tabs.Pane label="运动" name="14">配置管理</Tabs.Pane>
-                <Tabs.Pane label="母婴" name="15">角色管理</Tabs.Pane>
-                <Tabs.Pane label="家装" name="16">定时补偿任务</Tabs.Pane>
-                <Tabs.Pane label="家具" name="17">用户管理</Tabs.Pane>
-                <Tabs.Pane label="饮食" name="18">配置管理</Tabs.Pane>
-                <Tabs.Pane label="汽配" name="19">角色管理</Tabs.Pane>
-                <Tabs.Pane label="正餐" name="20">定时补偿任务</Tabs.Pane>
-                <Tabs.Pane label="宠物" name="21">用户管理</Tabs.Pane>
-                <Tabs.Pane label="定制" name="22">配置管理</Tabs.Pane>
-                <Tabs.Pane label="健康保健" name="23">角色管理</Tabs.Pane>
+                <Tabs.Pane label="女装" name="4"></Tabs.Pane>
+                <Tabs.Pane label="男装" name="5"></Tabs.Pane>
+                <Tabs.Pane label="箱包" name="6"></Tabs.Pane>
+                <Tabs.Pane label="内衣配饰" name="7"></Tabs.Pane>
+                <Tabs.Pane label="鞋靴" name="8"></Tabs.Pane>
+                <Tabs.Pane label="家纺" name="9"></Tabs.Pane>
+                <Tabs.Pane label="眼镜" name="10"></Tabs.Pane>
+                <Tabs.Pane label="电器" name="11"></Tabs.Pane>
+                <Tabs.Pane label="数码" name="12"></Tabs.Pane>
+                <Tabs.Pane label="餐厨" name="13"></Tabs.Pane>
+                <Tabs.Pane label="运动" name="14"></Tabs.Pane>
+                <Tabs.Pane label="母婴" name="15"></Tabs.Pane>
+                <Tabs.Pane label="家装" name="16"></Tabs.Pane>
+                <Tabs.Pane label="家具" name="17"></Tabs.Pane>
+                <Tabs.Pane label="饮食" name="18"></Tabs.Pane>
+                <Tabs.Pane label="汽配" name="19"></Tabs.Pane>
+                <Tabs.Pane label="正餐" name="20"></Tabs.Pane>
+                <Tabs.Pane label="宠物" name="21"></Tabs.Pane>
+                <Tabs.Pane label="定制" name="22"></Tabs.Pane>
+                <Tabs.Pane label="健康保健" name="23"></Tabs.Pane>
               </Tabs>
               </div>
-            <Button type="primary" onClick={this.goto.bind(this)}>点击跳转商品详情</Button>
+            {/* <Button type="primary" onClick={this.goto.bind(this)}>点击跳转商品详情</Button> */}
           </div>
         )
       }
