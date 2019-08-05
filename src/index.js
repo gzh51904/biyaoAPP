@@ -5,16 +5,20 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 //引入路由模式
-import {HashRouter} from 'react-router-dom';
+import {HashRouter,BrowserRouter} from 'react-router-dom';
 
 //引入react-redux
 // import {Provider} from 'react-redux';
 // import store from './store';
 render(
+
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>,
     // <Provider store={store}>
-        <HashRouter>
-            <App />
-        </HashRouter>,
+        // <HashRouter>
+            
+        // </HashRouter>,
     // </Provider>, 
     document.getElementById('root')
 );

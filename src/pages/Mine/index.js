@@ -19,7 +19,7 @@ class Mine extends Component{
 				'Content-Type': 'application/x-www-form-urlencoded'
 			},
 			method: 'post',
-			url: 'http://localhost:1111/mine',
+			url: 'http://39.104.201.114:1111/mine',
 			params:{source:"s1"}
 		})
 	

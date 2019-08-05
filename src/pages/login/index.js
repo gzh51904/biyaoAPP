@@ -90,7 +90,7 @@ class Login extends React.Component{
             return 
         }if(reg.test(this.refs.myPhone.value)){
             this.setState({regNext:false})
-            axios.get('http://localhost:1111/login',{params:{phone:this.state.codeValue1*1}}).then(res=>{
+            axios.get('http://39.104.201.114:1111/login',{params:{phone:this.state.codeValue1*1}}).then(res=>{
                 // res = JSON.parse(res);
                let data = {res}.res.data
                 console.log(data)

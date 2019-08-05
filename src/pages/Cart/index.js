@@ -5,6 +5,7 @@ import axios from 'axios';
 import { InputNumber,Dialog,Button } from 'element-react';
 
 import 'element-theme-default';
+
 import { Icon } from 'antd';
 
 import './cart.scss';
@@ -31,29 +32,47 @@ class Cart extends Component{
     }
 
     componentDidMount() {
-        
+        // let res = require("../../data/cart.json")
+        // console.log(res)
         const _this = this;
-        axios
-            .get(
-                "https://www.easy-mock.com/mock/5d3e59693e03d22c77116ea1/example/cart"
-            )
-            .then(function (response) {
-                // console.log(response.data.data);
-                // console.log(response.data.data.length)
-                
-                _this.setState({
-                    goodslist: response.data.data,
-                    isLoaded: true
-                });             
-                
-            })
-            .catch(function (error) {
-                // console.log(error);
-                _this.setState({
-                    isLoaded: false,
-                    error: error
-                });
+        axios.get("http://39.104.201.114:1112/cart").then( res => {
+        // axios.get("http://localhost:1112/cart").then( res => {
+            console.log(res.data.data);
+            _this.setState({
+                goodslist: res.data.data,
+                isLoaded: true
+            });  
+        })
+        .catch( error => {
+            console.log(error);
+            _this.setState({
+                isLoaded: false,
+                error: error
             });
+        });
+        // axios
+        //     .get(
+        //         "../../data/cart.json"
+        //     )
+        //     .then(function (response) {
+        //         console.log(response);
+        //         // console.log(response.data.data);
+        //         // console.log(response.data.data.length)
+        //         response = JSON.parse(response)[0]
+                
+        //         _this.setState({
+        //             goodslist: response.data.data,
+        //             isLoaded: true
+        //         });             
+                
+        //     })
+        //     .catch(function (error) {
+        //         // console.log(error);
+        //         _this.setState({
+        //             isLoaded: false,
+        //             error: error
+        //         });
+        //     });
             window.addEventListener("onload",function(){
                this.total()()
             })

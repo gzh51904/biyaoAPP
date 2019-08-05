@@ -130,7 +130,7 @@ class Home extends Component{
                           <img src="https://bfs.biyao.com/group1/M00/F8/52/rBACYV0IN4WAUb2wAAA3gI4Vba0565.jpg"/>
                             <dl id="shop-show">
                               <dt className="price">
-                                <span>￥</span><span>98</span>
+                                <span>￥</span><span>89</span>
                               </dt>
                               <dd className="labels">
                                 <span className="labels_1">精选</span>

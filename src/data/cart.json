@@ -1,0 +1,35 @@
+[
+    {
+    "id": "130300",
+    "user": "13420128941",
+    "imgurl": "https://bfs.biyao.com/group1/M00/F6/98/rBACVF0IN5aALph_AACJL5soNkY303_400x400.jpg",
+    "brand": "FRC",
+    "goodsName": "魅力缪斯清透散粉",
+    "model": "粉色",
+    "price": "89",
+    "qty": "1",
+    "status": "close"
+  },
+  {
+    "id": "130108",
+    "user": "13420128941",
+    "imgurl": "https://bfs.biyao.com/group1/M00/62/E5/rBACW1vHEKqAUMdIAACQBFWLGNQ594_400x400.jpg",
+    "brand": "Cerulean美妆护肤",
+    "goodsName": "瑟尤丽恩水光遮瑕CC棒",
+    "model": "21亮肤色",
+    "price": "99",
+    "qty": "1",
+    "status": "close"
+  },
+  {
+    "id": "130232",
+    "user": "13420128941",
+    "imgurl": "https://bfs.biyao.com/group1/M00/9F/39/rBACVFx2AkyAPv8NAAFRE8vWMIQ357_400x400.jpg",
+    "brand": "WOOG纸品",
+    "goodsName": "柔肤双效化妆棉，清洁护肤卸妆棉，湿敷省水好吸收，超值4盒装",
+    "model": "60片四盒装",
+    "price": "49",
+    "qty": "1",
+    "status": "close"
+  }
+]
