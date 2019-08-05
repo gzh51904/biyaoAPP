@@ -1,73 +1,92 @@
-<<<<<<< HEAD
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##### 项目名称：必要
 
-## Available Scripts
+##### 演示：
 
-In the project directory, you can run:
+​	1、官网：http://m.biyao.com/
 
-### `npm start`
+​	2、上线网址：39.104.201.114:1904
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+​	3、GitHub仓库地址：git@github.com:gzh51904/biyaoAPP.git
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+##### 团队与分工：
 
-### `npm test`
+​	1、团队：组长：周育盛，成员：江宇达、张兼铭、刘智
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+​	2、负责模块说明：
 
-### `npm run build`
+​		① 周育盛
+​			"我的"页：登陆页面、我的页面、后台数据库、搜索功能组件、排序组件...
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+​		② 刘智
+​			首页：下拉列表、返回顶部...
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+​		③ 张兼铭
+​			"分类"页：侧边栏，点开更多页面，底部导航栏...
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+​		④ 江宇达
+​			"详情"页 + "购物车"页：购物车功能，购物车页面，购物车数据库...​       				
 
-### `npm run eject`
+​	3、项目目录说明：
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+.
+|-- README.md
+|-- package-lock.json
+|-- package.json
+|-- public
+|   |-- favicon.ico
+|   |-- index.html
+|   |-- manifest.json
+|   `-- rem.js
+`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+-- src
+    |-- App.css
+    |-- App.js
+    |-- App.min.css
+    |-- App.scss
+    |-- assets
+    |   `-- img
+  |-- components
+  |   `-- Classify
+    |       |-- Bags.js
+    |       |-- MenClothing.js
+    |       |-- Nurse.js
+    |       |-- Nurse.scss
+    |       `-- WomenClothing.js
+  |-- index.js
+  |-- pages
+  |   |-- Cart
+  |   |   |-- cart.scss
+  |   |   `-- index.js
+    |   |-- Classify
+    |   |   |-- classify.scss
+    |   |   `-- index.js
+  | |-- Details
+  | |   |-- details.css
+  | |   |-- details.min.css
+  | |   |-- details.scss
+  |  |   `-- index.js
+    |   |-- Home
+    |   |   |-- home.scss
+    |   |   `-- index.js
+  |  |-- Mine
+  |  |   |-- index.js
+  |   |   |-- mine.css
+  |   |   |-- mine.min.css
+  |   |   `-- mine.scss
+    |   |-- login
+    |   |   |-- index.js
+    |   |   `-- login.css
+  |   `-- utils
+    |       |-- index.js
+    |       `-- request.js
+  |-- serviceWorker.js
+    `
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+​    |-- store
+​        |-- cartActions.js
+​        `-- index.js
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+​	4、项目首页截图：
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-=======
-# -
-ReactProject
->>>>>>> 4e1f04a8848d7e7b13e4c3fc58d0bccd46879b98
+![](C:\Users\62319\Desktop\笔记\Snipaste_2019-07-31_09-06-05.png)
